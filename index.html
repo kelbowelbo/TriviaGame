@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Totally Trivial Trivia</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<audio id="backgroundmusic">
+		<source src="assets/media/Jeopardy-theme-song.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+	<div class="startWindow" align="center"><h1>SUPER TRIVIA!</h1>
+		<button type="button" name="startButton">START</button>
+	</div>
+
+	<div class="triviaWindow" align="center"><h1>Super Trivia!</h1>
+		<h2 id="timeRemaining"></h2>
+		<form>			
+			<p>Who is the BOSS of me?</p>
+			<input type="radio" name="firstQuestion" value="Me">Me
+			<input type="radio" name="firstQuestion" value="Not Me">Not Me
+			<input type="radio" name="firstQuestion" value="My Mommy">My Mommy
+			<input type="radio" name="firstQuestion" value="My Daddy">My Daddy
+
+			<p>What is my MBA concentration?</p>
+			<input type="radio" name="secondQuestion" value="UBasketW">Underwater Basket Weaving
+			<input type="radio" name="secondQuestion" value="Biology">Biology
+			<input type="radio" name="secondQuestion" value="Coding">Coding
+			<input type="radio" name="secondQuestion" value="IBusiness & E-Commerce">International Business &amp; E-Commerce
+
+			<p>How many children do I have?</p>
+			<input type="radio" name="thirdQuestion" value="19">19 and counting
+			<input type="radio" name="thirdQuestion" value="Zero">0
+			<input type="radio" name="thirdQuestion" value="NY">Nunyabusiness
+			<input type="radio" name="thirdQuestion" value="one">1
+
+			<p>What position did I play in ice hocket?</p>
+			<input type="radio" name="fourthQuestion" value="goal">Goalie
+			<input type="radio" name="fourthQuestion" value="QB">Quarterback
+			<input type="radio" name="fourthQuestion" value="PT">Pitcher
+			<input type="radio" name="fourthQuestion" value="LW">Left Wing
+		</form>		
+	</div>
+
+	<div class="gameStatistics" align="center"><h1>Game Statistics</h1>
+		<h2 id="correct" class="GSlabel"></h2>
+		<h2 id="incorrect" class="GSlabel"></h2>
+		<h2 id="unanswered" class="GSlabel"></h2>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
